@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Resource Navigator | Pathway AI × Chicago State University</title>
+
+  <meta
+    name="description"
+    content="Explore Chicago State University and community resources through the Pathway AI Resource Navigator."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Shared site styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Resources page styles -->
+  <link rel="stylesheet" href="resources.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       1. UNIVERSITY ANNOUNCEMENT BAR
+  ====================================================== -->
+
+  <div class="university-bar">
+    <div class="container university-bar-content">
+      <p>
+        <span class="star-icon">★</span> Empowering Chicago State University students to achieve financial wellness and graduate with confidence.
+      </p>
+
+      <div class="university-links">
+        <a href="/support.html">Support</a>
+        <a href="/login.html">Student Login</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       2. NAVIGATION HEADER
+  ====================================================== -->
+
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+
+      <a href="/" class="brand" aria-label="Chicago State University Home">
+        <div class="brand-mark">CSU</div>
+        <div class="brand-text">
+          <strong>CHICAGO STATE</strong>
+          <span>UNIVERSITY</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/resources.html" class="active">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/login.html" class="login-link">Log In</a>
+        <a href="/signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <button
+        class="mobile-menu-button"
+        id="mobile-menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav-drawer"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <div class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </div>
+        <button class="mobile-close-button" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="/">Home</a>
+        <a href="/resources.html" class="active">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+        <hr class="drawer-divider" />
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget Tracker</a>
+        <a href="/coach.html">AI Wellness Coach</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="/login.html" class="btn btn-outline btn-full">Log In</a>
+        <a href="/signup.html" class="btn btn-primary btn-full">Get Started</a>
+      </div>
+    </div>
+    <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  </header>
+
+
+
+  <main>
+
+    <!-- =====================================================
+         3. RESOURCE HERO
+    ====================================================== -->
+
+    <section class="resource-hero">
+      <div class="container resource-hero-grid">
+
+        <!-- LEFT HERO CONTENT -->
+        <div class="resource-hero-content">
+          <span class="eyebrow green">PATHWAY AI RESOURCE NAVIGATOR</span>
+          <h1>
+            Find the support<br>
+            <span>you need.</span>
+          </h1>
+          <p>
+            Explore Chicago State University and community resources designed to support your financial, academic, and personal success.
+          </p>
+
+          <!-- HERO SEARCH INPUT -->
+          <div class="hero-resource-search">
+            <div class="search-icon">&#x2315;</div>
+            <input
+              type="search"
+              id="heroSearchInput"
+              placeholder="What can we help you find? (e.g. food pantry, tutoring, emergency aid)"
+              aria-label="Search resources"
+            />
+            <button class="btn btn-primary" id="heroSearchBtn">
+              Search Resources
+            </button>
+          </div>
+
+          <!-- POPULAR QUERY CHIPS -->
+          <div class="popular-searches">
+            <span>Popular Searches:</span>
+            <button data-search="food">Food Assistance</button>
+            <button data-search="housing">Housing</button>
+            <button data-search="financial">Financial Help</button>
+            <button data-search="tutoring">Tutoring</button>
+          </div>
+        </div>
+
+        <!-- RIGHT HERO VISUAL CARD -->
+        <div class="resource-hero-visual">
+          <div class="resource-visual-card">
+            <div class="visual-card-header">
+              <div>
+                <span>RESOURCE NAVIGATOR &bull; LIVE HUB</span>
+                <h3>How can we help?</h3>
+              </div>
+              <div class="visual-icon">&#x2315;</div>
+            </div>
+
+            <div class="visual-resource-list">
+              <div class="visual-resource-item">
+                <span class="mini-resource-icon">&#x2668;</span>
+                <div>
+                  <strong>Food &amp; Basic Needs</strong>
+                  <small>Campus pantry &amp; emergency vouchers</small>
+                </div>
+                <span class="visual-arrow">&rarr;</span>
+              </div>
+
+              <div class="visual-resource-item">
+                <span class="mini-resource-icon">&#x2302;</span>
+                <div>
+                  <strong>Housing Support</strong>
+                  <small>Emergency relief &amp; off-campus guidance</small>
+                </div>
+                <span class="visual-arrow">&rarr;</span>
+              </div>
+
+              <div class="visual-resource-item">
+                <span class="mini-resource-icon">+</span>
+                <div>
+                  <strong>Health &amp; Wellness</strong>
+                  <small>Student medical center &amp; counseling</small>
+                </div>
+                <span class="visual-arrow">&rarr;</span>
+              </div>
+
+              <div class="visual-resource-item">
+                <span class="mini-resource-icon">A</span>
+                <div>
+                  <strong>Academic Support</strong>
+                  <small>Tutoring &amp; advising services</small>
+                </div>
+                <span class="visual-arrow">&rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =====================================================
+         4. QUICK HELP / CATEGORY SELECTOR (10 REQUIRED CATEGORIES)
+    ====================================================== -->
+
+    <section class="quick-help-section">
+      <div class="container">
+
+        <div class="quick-help-heading">
+          <div>
+            <span class="eyebrow green">START HERE</span>
+            <h2>What do you need help with?</h2>
+          </div>
+          <p>
+            Choose a category to quickly filter resources matched directly to your student needs.
+          </p>
+        </div>
+
+        <div class="resource-category-grid">
+
+          <!-- 0. ALL -->
+          <button class="resource-category-card active" data-category="all">
+            <div class="category-icon">&#x2722;</div>
+            <div>
+              <h3>All Resources</h3>
+              <p>Browse all available student support programs.</p>
+            </div>
+          </button>
+
+          <!-- 1. FOOD -->
+          <button class="resource-category-card" data-category="food">
+            <div class="category-icon">&#x2668;</div>
+            <div>
+              <h3>Food &amp; Basic Needs</h3>
+              <p>Food assistance, pantry hours &amp; essential needs.</p>
+            </div>
+          </button>
+
+          <!-- 2. HOUSING -->
+          <button class="resource-category-card" data-category="housing">
+            <div class="category-icon">&#x2302;</div>
+            <div>
+              <h3>Housing</h3>
+              <p>Housing support &amp; emergency room relief.</p>
+            </div>
+          </button>
+
+          <!-- 3. FINANCIAL -->
+          <button class="resource-category-card" data-category="financial">
+            <div class="category-icon">$</div>
+            <div>
+              <h3>Financial Support</h3>
+              <p>Emergency grants, micro-aid &amp; financial wellness.</p>
+            </div>
+          </button>
+
+          <!-- 4. HEALTH -->
+          <button class="resource-category-card" data-category="health">
+            <div class="category-icon">+</div>
+            <div>
+              <h3>Health &amp; Wellness</h3>
+              <p>Medical center services &amp; student health care.</p>
+            </div>
+          </button>
+
+          <!-- 5. COUNSELING -->
+          <button class="resource-category-card" data-category="counseling">
+            <div class="category-icon">&#x262F;</div>
+            <div>
+              <h3>Counseling</h3>
+              <p>Confidential mental health &amp; stress counseling.</p>
+            </div>
+          </button>
+
+          <!-- 6. ACADEMIC -->
+          <button class="resource-category-card" data-category="academic">
+            <div class="category-icon">A</div>
+            <div>
+              <h3>Academic Support</h3>
+              <p>Degree advising &amp; academic planning.</p>
+            </div>
+          </button>
+
+          <!-- 7. TUTORING -->
+          <button class="resource-category-card" data-category="tutoring">
+            <div class="category-icon">&#x270E;</div>
+            <div>
+              <h3>Tutoring</h3>
+              <p>Peer tutoring in Math, Writing, and Sciences.</p>
+            </div>
+          </button>
+
+          <!-- 8. TECHNOLOGY -->
+          <button class="resource-category-card" data-category="technology">
+            <div class="category-icon">&#x25EB;</div>
+            <div>
+              <h3>Technology</h3>
+              <p>Laptop loaner programs &amp; digital IT access.</p>
+            </div>
+          </button>
+
+          <!-- 9. TRANSPORTATION -->
+          <button class="resource-category-card" data-category="transportation">
+            <div class="category-icon">&#x2194;</div>
+            <div>
+              <h3>Transportation</h3>
+              <p>CTA U-Pass distribution &amp; transit help.</p>
+            </div>
+          </button>
+
+          <!-- 10. CAREER -->
+          <button class="resource-category-card" data-category="career">
+            <div class="category-icon">&#x25C7;</div>
+            <div>
+              <h3>Career Support</h3>
+              <p>Resume prep, internships &amp; campus employment.</p>
+            </div>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =====================================================
+         5. RESOURCE DIRECTORY (DYNAMIC RESULTS & TOOLBAR)
+    ====================================================== -->
+
+    <section class="resource-directory" id="resourceDirectory">
+      <div class="container">
+
+        <!-- DIRECTORY HEADING -->
+        <div class="directory-heading">
+          <div>
+            <span class="eyebrow green">RESOURCE DIRECTORY</span>
+            <h2>Explore Resources</h2>
+            <p>Browse available services or use keyword search and category filters.</p>
+          </div>
+
+          <div class="directory-count">
+            <strong id="resourceCount">0</strong>
+            <span>resources shown</span>
+          </div>
+        </div>
+
+        <!-- SEARCH + FILTER TOOLBAR -->
+        <div class="resource-toolbar">
+          <div class="directory-search">
+            <span>&#x2315;</span>
+            <input
+              type="search"
+              id="directorySearchInput"
+              placeholder="Search by keyword, tag, or title..."
+              aria-label="Filter resources by text"
+            />
+          </div>
+
+          <select id="categoryFilterSelect" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+            <option value="food">Food &amp; Basic Needs</option>
+            <option value="housing">Housing</option>
+            <option value="financial">Financial Support</option>
+            <option value="health">Health &amp; Wellness</option>
+            <option value="counseling">Counseling</option>
+            <option value="academic">Academic Support</option>
+            <option value="tutoring">Tutoring</option>
+            <option value="technology">Technology</option>
+            <option value="transportation">Transportation</option>
+            <option value="career">Career Support</option>
+          </select>
+
+          <select id="sortSelect" aria-label="Sort resources">
+            <option value="recommended">Recommended</option>
+            <option value="az">A – Z (Title)</option>
+            <option value="recent">Recently Updated</option>
+          </select>
+        </div>
+
+        <!-- DYNAMIC RESOURCE RESULTS GRID -->
+        <div class="resource-results" id="resourceResults">
+          <!-- Rendered dynamically by resources.js -->
+        </div>
+
+        <!-- EMPTY STATE (NO RESULTS) -->
+        <div class="no-results" id="noResults" hidden>
+          <div class="no-results-icon">&#x2315;</div>
+          <h3>We couldn't find a matching resource.</h3>
+          <p>
+            Try adjusting your search terms or resetting the category filters to discover available support.
+          </p>
+          <div class="no-results-actions">
+            <button class="btn btn-outline" id="resetFiltersBtn">
+              Reset All Filters
+            </button>
+            <a href="/support.html" class="btn btn-primary">
+              Contact Student Support
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =====================================================
+         6. NEED HELP CTA
+    ====================================================== -->
+
+    <section class="resource-help-section">
+      <div class="container resource-help-card">
+
+        <div>
+          <span class="eyebrow light">CAN'T FIND WHAT YOU NEED?</span>
+          <h2>We're here to help.</h2>
+          <p>
+            If you're unsure which resource is right for you, Pathway AI can guide your options or connect you directly with Chicago State University student services.
+          </p>
+        </div>
+
+        <div class="resource-help-actions">
+          <a href="/coach.html" class="btn btn-light">
+            Ask Pathway AI Coach
+          </a>
+          <a href="/support.html" class="btn btn-green-outline">
+            Contact Support
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =====================================================
+         7. PRIVACY NOTE
+    ====================================================== -->
+
+    <section class="resource-privacy">
+      <div class="container privacy-message">
+        <div class="privacy-message-icon">&#x25C7;</div>
+        <div>
+          <strong>Your privacy comes first.</strong>
+          <p>
+            Pathway AI is designed to provide transparent resource discovery while ensuring student information is protected and under your control.
+          </p>
+        </div>
+        <a href="/privacy.html">
+          Learn About Privacy &rarr;
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       8. RESOURCE DETAIL MODAL DIALOG (SLIDE-OVER / OVERLAY)
+  ====================================================== -->
+
+  <div class="resource-modal-overlay" id="resourceModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="resource-modal-dialog">
+
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-header-icon" id="modalIcon">&#x25C7;</div>
+          <div>
+            <div class="modal-header-tags">
+              <span class="modal-tag" id="modalCategoryTag">CATEGORY</span>
+              <span class="modal-scope-tag" id="modalScopeTag">Campus Resource</span>
+            </div>
+            <h2 id="modalTitle">Resource Title Loading...</h2>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-description-box" id="modalDescription"></p>
+
+        <div class="modal-instructions-box">
+          <strong>How to Access / Instructions:</strong>
+          <p id="modalInstructions"></p>
+        </div>
+
+        <div class="modal-grid-details">
+          <div class="modal-detail-item">
+            <strong>Eligibility Criteria</strong>
+            <p id="modalEligibility"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Campus Location</strong>
+            <p id="modalLocation"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Operating Hours &amp; Availability</strong>
+            <p id="modalAvailability"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Deadlines / Status</strong>
+            <p id="modalDeadline"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Contact Information</strong>
+            <p id="modalContact"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn modal-save-btn" id="modalSaveBtn">
+          &#x2661; Save Resource
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalUrlLink">
+          Visit Resource Website &rarr;
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- =====================================================
+       9. FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </a>
+        <p>
+          Pathway AI supports Chicago State University students on their journey toward financial wellness and academic success.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Pathway AI</h4>
+        <a href="/">Home</a>
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget</a>
+        <a href="/coach.html">AI Coach</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Student Resources</h4>
+        <a href="/resources.html" class="active">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html">Support</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/accessibility.html">Accessibility</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Chicago State University. All rights reserved.</span>
+      <span>Pathway AI &bull; Educational Guidance Only</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script src="resources.js"></script>
+
+</body>
+</html>
