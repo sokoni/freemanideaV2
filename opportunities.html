@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Opportunity Hub | Pathway AI × Chicago State University</title>
+
+  <meta
+    name="description"
+    content="Discover scholarships, jobs, internships, certifications, leadership programs, and career events through Pathway AI."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Shared global styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Opportunity page styles -->
+  <link rel="stylesheet" href="opportunities.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       1. UNIVERSITY ANNOUNCEMENT BAR
+  ====================================================== -->
+
+  <div class="university-bar">
+    <div class="container university-bar-content">
+      <p>
+        <span class="star-icon">★</span> Empowering Chicago State University students to achieve financial wellness and graduate with confidence.
+      </p>
+
+      <div class="university-links">
+        <a href="/support.html">Support</a>
+        <a href="/login.html">Student Login</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       2. NAVIGATION HEADER
+  ====================================================== -->
+
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+
+      <a href="/" class="brand" aria-label="Chicago State University Home">
+        <div class="brand-mark">CSU</div>
+        <div class="brand-text">
+          <strong>CHICAGO STATE</strong>
+          <span>UNIVERSITY</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html" class="active">Opportunities</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/login.html" class="login-link">Log In</a>
+        <a href="/signup.html" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <button
+        class="mobile-menu-button"
+        id="mobile-menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav-drawer"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <div class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </div>
+        <button class="mobile-close-button" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="/">Home</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html" class="active">Opportunities</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+        <hr class="drawer-divider" />
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget Tracker</a>
+        <a href="/coach.html">AI Wellness Coach</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="/login.html" class="btn btn-outline btn-full">Log In</a>
+        <a href="/signup.html" class="btn btn-primary btn-full">Get Started</a>
+      </div>
+    </div>
+    <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         3. OPPORTUNITY HERO
+    ====================================================== -->
+
+    <section class="opportunity-hero">
+      <div class="container opportunity-hero-grid">
+
+        <!-- LEFT -->
+        <div class="opportunity-hero-content">
+          <span class="eyebrow green">PATHWAY AI OPPORTUNITY HUB</span>
+          <h1>
+            Opportunities built<br>
+            around <span>your future.</span>
+          </h1>
+
+          <p>
+            Explore scholarships, campus jobs, internships, certifications, leadership programs, career events, and other opportunities available to support your goals.
+          </p>
+
+          <!-- HERO SEARCH -->
+          <div class="opportunity-search">
+            <div class="search-symbol">&#x2315;</div>
+            <input
+              type="search"
+              id="heroOpportunitySearch"
+              placeholder="Search scholarships, jobs, internships..."
+              aria-label="Search opportunities"
+            />
+            <button class="btn btn-primary" id="heroSearchButton">
+              Search Opportunities
+            </button>
+          </div>
+
+          <!-- POPULAR SEARCHES -->
+          <div class="popular-opportunity-searches">
+            <span>Explore:</span>
+            <button data-search="scholarship">Scholarships</button>
+            <button data-search="job">Campus Jobs</button>
+            <button data-search="internship">Internships</button>
+            <button data-search="certification">Certifications</button>
+          </div>
+        </div>
+
+        <!-- RIGHT HERO VISUAL -->
+        <div class="opportunity-hero-visual">
+          <div class="opportunity-preview-card">
+            <div class="preview-header">
+              <div>
+                <span>RECOMMENDED FOR YOU</span>
+                <h3>Discover what's next.</h3>
+              </div>
+              <div class="preview-header-icon">&#x2722;</div>
+            </div>
+
+            <!-- PREVIEW ITEM 1 -->
+            <div class="preview-opportunity featured">
+              <div class="preview-icon">$</div>
+              <div>
+                <span class="preview-type">SCHOLARSHIP</span>
+                <strong>CSU Presidential Scholarship</strong>
+                <small>Financial aid opportunity &bull; 94% Match</small>
+              </div>
+              <span class="preview-arrow">&rarr;</span>
+            </div>
+
+            <!-- PREVIEW ITEM 2 -->
+            <div class="preview-opportunity">
+              <div class="preview-icon">&#x25C7;</div>
+              <div>
+                <span class="preview-type">CAMPUS JOB</span>
+                <strong>Student Technology Assistant</strong>
+                <small>On-campus student employment &bull; 89% Match</small>
+              </div>
+              <span class="preview-arrow">&rarr;</span>
+            </div>
+
+            <!-- PREVIEW ITEM 3 -->
+            <div class="preview-opportunity">
+              <div class="preview-icon">&#x2197;</div>
+              <div>
+                <span class="preview-type">INTERNSHIP</span>
+                <strong>Chicago Innovation Internship</strong>
+                <small>Paid corporate experience &bull; 91% Match</small>
+              </div>
+              <span class="preview-arrow">&rarr;</span>
+            </div>
+
+            <div class="preview-footer">
+              <span>New opportunities updated regularly.</span>
+              <a href="#opportunity-directory">View All &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         4. CATEGORY NAVIGATION GRID (8 CATEGORIES)
+    ====================================================== -->
+
+    <section class="opportunity-categories">
+      <div class="container">
+
+        <div class="category-heading">
+          <div>
+            <span class="eyebrow green">EXPLORE CATEGORIES</span>
+            <h2>What are you looking for?</h2>
+          </div>
+          <p>
+            Browse by opportunity type or view everything available through the Pathway AI Opportunity Hub.
+          </p>
+        </div>
+
+        <div class="opportunity-category-grid">
+
+          <button class="opportunity-category active" data-category="all">
+            <span class="opportunity-category-icon">&#x2722;</span>
+            <div>
+              <strong>All Opportunities</strong>
+              <small>Explore everything available</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="scholarship">
+            <span class="opportunity-category-icon">$</span>
+            <div>
+              <strong>Scholarships</strong>
+              <small>Financial aid support</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="job">
+            <span class="opportunity-category-icon">&#x25C7;</span>
+            <div>
+              <strong>Campus Jobs</strong>
+              <small>Student employment</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="internship">
+            <span class="opportunity-category-icon">&#x2197;</span>
+            <div>
+              <strong>Internships</strong>
+              <small>Professional experience</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="career-event">
+            <span class="opportunity-category-icon">&#x25CE;</span>
+            <div>
+              <strong>Career Events</strong>
+              <small>Fairs and networking</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="certification">
+            <span class="opportunity-category-icon">&check;</span>
+            <div>
+              <strong>Certifications</strong>
+              <small>Build credentials</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="leadership">
+            <span class="opportunity-category-icon">&#x265F;</span>
+            <div>
+              <strong>Leadership</strong>
+              <small>Executive student programs</small>
+            </div>
+          </button>
+
+          <button class="opportunity-category" data-category="volunteer">
+            <span class="opportunity-category-icon">&#x2661;</span>
+            <div>
+              <strong>Volunteer</strong>
+              <small>Community service</small>
+            </div>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         5. PERSONALIZED MATCHING SECTION
+    ====================================================== -->
+
+    <section class="matching-section">
+      <div class="container matching-card">
+
+        <div class="matching-content">
+          <span class="eyebrow light">PERSONALIZED DISCOVERY</span>
+          <h2>
+            Find opportunities that<br>
+            match your goals.
+          </h2>
+
+          <p>
+            Pathway AI uses your academic profile, major, career interests, and financial goals to recommend high-match opportunities with clear explanation rules.
+          </p>
+
+          <div class="matching-features">
+            <span>&check; Academic Profile</span>
+            <span>&check; Major &amp; Standing</span>
+            <span>&check; Career Interests</span>
+            <span>&check; Rule-Based Explanations</span>
+          </div>
+
+          <a href="/signup.html" class="btn btn-light">
+            Complete Your Student Profile &rarr;
+          </a>
+        </div>
+
+        <div class="match-preview">
+          <div class="match-preview-header">
+            <div>
+              <small>RULE-BASED MATCHING</small>
+              <strong>Top Recommended Matches</strong>
+            </div>
+            <span>&#x2722;</span>
+          </div>
+
+          <div class="match-item">
+            <div class="match-score">94%</div>
+            <div>
+              <strong>CSU Presidential Scholarship</strong>
+              <span>Strong Academic &amp; Major Match</span>
+            </div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-score">91%</div>
+            <div>
+              <strong>Chicago Innovation Internship</strong>
+              <span>Matches Career Goals &amp; Standing</span>
+            </div>
+          </div>
+
+          <div class="match-item">
+            <div class="match-score">89%</div>
+            <div>
+              <strong>Student Technology Assistant</strong>
+              <span>Matches Tech Interest &amp; Location</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         6. OPPORTUNITY DIRECTORY
+    ====================================================== -->
+
+    <section class="opportunity-directory" id="opportunity-directory">
+      <div class="container">
+
+        <!-- DIRECTORY HEADING -->
+        <div class="directory-heading">
+          <div>
+            <span class="eyebrow green">OPPORTUNITY DIRECTORY</span>
+            <h2>Explore Opportunities</h2>
+            <p>Search and filter available opportunities matched to your goals.</p>
+          </div>
+
+          <div class="opportunity-result-count">
+            <strong id="opportunityCount">0</strong>
+            <span>opportunities shown</span>
+          </div>
+        </div>
+
+        <!-- TOOLBAR -->
+        <div class="opportunity-toolbar">
+          <div class="directory-opportunity-search">
+            <span>&#x2315;</span>
+            <input
+              type="search"
+              id="opportunitySearch"
+              placeholder="Search by keyword, major, organization, or eligibility..."
+              aria-label="Search opportunities"
+            />
+          </div>
+
+          <select id="opportunityCategoryFilter" aria-label="Filter opportunities by category">
+            <option value="all">All Categories</option>
+            <option value="scholarship">Scholarships</option>
+            <option value="job">Campus Jobs</option>
+            <option value="internship">Internships</option>
+            <option value="career-event">Career Events</option>
+            <option value="certification">Certifications</option>
+            <option value="leadership">Leadership</option>
+            <option value="volunteer">Volunteer</option>
+          </select>
+
+          <select id="opportunitySort" aria-label="Sort opportunities">
+            <option value="recommended">Recommended (Match Score)</option>
+            <option value="deadline">Upcoming Deadline</option>
+            <option value="newest">Recently Added</option>
+            <option value="alphabetical">A – Z (Title)</option>
+          </select>
+        </div>
+
+        <!-- FILTER CHIPS ROW -->
+        <div class="filter-row">
+          <button class="filter-chip" data-filter="Open">Open Now</button>
+          <button class="filter-chip" data-filter="Campus">Campus</button>
+          <button class="filter-chip" data-filter="Community">Community</button>
+          <button class="filter-chip" data-filter="No Deadline">No Deadline</button>
+          <button class="filter-chip" data-filter="Recommended">Recommended</button>
+        </div>
+
+        <!-- OPPORTUNITY CARDS GRID -->
+        <div class="opportunity-results" id="opportunityResults">
+          <!-- Rendered dynamically by opportunities.js -->
+        </div>
+
+        <!-- NO RESULTS -->
+        <div class="opportunity-no-results" id="opportunityNoResults" hidden>
+          <div class="no-opportunity-icon">&#x2315;</div>
+          <h3>No matching opportunities found.</h3>
+          <p>
+            Try adjusting your search term or clearing the active category filters to discover available opportunities.
+          </p>
+          <button class="btn btn-primary" id="clearOpportunityFilters">
+            Clear All Filters
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         7. SAVED OPPORTUNITIES CTA
+    ====================================================== -->
+
+    <section class="saved-opportunities-section">
+      <div class="container saved-opportunities-card">
+        <div class="saved-icon">&#x2661;</div>
+        <div>
+          <span class="eyebrow green">STAY ORGANIZED</span>
+          <h2>Save opportunities for later.</h2>
+          <p>
+            Keep scholarships, campus jobs, internships, and leadership programs together so you can return to them when you're ready to apply.
+          </p>
+        </div>
+        <button class="btn btn-primary" onclick="alert('Saved opportunities are accessible in your student portal dashboard.')">
+          View Saved Opportunities
+        </button>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         8. DEADLINE / REMINDER CTA
+    ====================================================== -->
+
+    <section class="deadline-section">
+      <div class="container deadline-card">
+        <div>
+          <span class="eyebrow light">DON'T MISS WHAT'S NEXT</span>
+          <h2>Keep important deadlines on your radar.</h2>
+          <p>
+            Save opportunities and set Pathway AI reminders to receive notifications for priority dates, scholarship deadlines, and career fairs.
+          </p>
+        </div>
+
+        <div class="deadline-example">
+          <div class="deadline-date">
+            <strong>15</strong>
+            <span>OCT</span>
+          </div>
+          <div>
+            <small>SAMPLE REMINDER</small>
+            <strong>CSU Presidential Scholarship Deadline</strong>
+            <p>Priority submission window closes at 11:59 PM CST.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       9. OPPORTUNITY DETAIL MODAL DIALOG
+  ====================================================== -->
+
+  <div class="opportunity-modal-overlay" id="opportunityModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="opportunity-modal-dialog">
+
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-header-icon" id="modalIcon">&#x25C7;</div>
+          <div>
+            <div class="modal-header-tags">
+              <span class="modal-tag" id="modalCategoryTag">TYPE</span>
+              <span class="modal-scope-tag" id="modalScopeTag">Campus</span>
+            </div>
+            <h2 id="modalTitle">Opportunity Title Loading...</h2>
+            <p class="modal-org-name" id="modalOrg"></p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details">&times;</button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="modal-match-box">
+          <div class="modal-match-header">
+            <strong>Why this matches you:</strong>
+            <span class="modal-match-badge" id="modalMatchScore">94% Match</span>
+          </div>
+          <ul id="modalMatchReasonsList">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+        <p class="modal-description-box" id="modalDescription"></p>
+
+        <div class="modal-instructions-box">
+          <strong>Application Instructions &amp; Requirements:</strong>
+          <p id="modalInstructions"></p>
+        </div>
+
+        <div class="modal-grid-details">
+          <div class="modal-detail-item">
+            <strong>Eligibility Criteria</strong>
+            <p id="modalEligibility"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Location &amp; Format</strong>
+            <p id="modalLocation"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Application Deadline</strong>
+            <p id="modalDeadline"></p>
+          </div>
+
+          <div class="modal-detail-item">
+            <strong>Opportunity Status</strong>
+            <p id="modalStatus"></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn modal-save-btn" id="modalSaveBtn">
+          &#x2661; Save Opportunity
+        </button>
+        <button class="btn modal-reminder-btn" id="modalReminderBtn">
+          &#x1F514; Set Reminder
+        </button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modalUrlLink">
+          Apply / View Official Page &rarr;
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       10. FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </a>
+        <p>
+          Pathway AI supports Chicago State University students on their journey toward financial wellness and academic success.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Pathway AI</h4>
+        <a href="/">Home</a>
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget</a>
+        <a href="/coach.html">AI Coach</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Student Resources</h4>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html" class="active">Opportunities</a>
+        <a href="/support.html">Support</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/accessibility.html">Accessibility</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Chicago State University. All rights reserved.</span>
+      <span>Pathway AI &bull; Educational Guidance Only</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script src="opportunities.js"></script>
+
+</body>
+</html>
