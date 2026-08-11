@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pathway AI | Chicago State University</title>
+
+  <meta
+    name="description"
+    content="Pathway AI helps Chicago State University students understand their financial wellness, discover opportunities, access resources, and receive personalized guidance."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- =========================================
+       1. TOP UNIVERSITY BAR
+  ========================================== -->
+
+  <div class="university-bar">
+    <div class="container university-bar-content">
+
+      <p>
+        <span class="star-icon">★</span> Empowering Chicago State University students to achieve financial wellness and graduate with confidence.
+      </p>
+
+      <div class="university-links">
+        <a href="/support.html">Support</a>
+        <a href="/login.html">Student Login</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =========================================
+       2. NAVIGATION
+  ========================================== -->
+
+  <header class="site-header" id="site-header">
+
+    <div class="container navbar">
+
+      <a href="/" class="brand" aria-label="Chicago State University Home">
+        <div class="brand-mark">
+          CSU
+        </div>
+
+        <div class="brand-text">
+          <strong>CHICAGO STATE</strong>
+          <span>UNIVERSITY</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="/" class="active">Home</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/login.html" class="login-link">
+          Log In
+        </a>
+
+        <a href="/signup.html" class="btn btn-primary">
+          Get Started
+        </a>
+      </div>
+
+      <button
+        class="mobile-menu-button"
+        id="mobile-menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav-drawer"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <div class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </div>
+        <button class="mobile-close-button" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html">Support</a>
+        <a href="/about.html">About</a>
+        <hr class="drawer-divider" />
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget Tracker</a>
+        <a href="/coach.html">AI Wellness Coach</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="/login.html" class="btn btn-outline btn-full">Log In</a>
+        <a href="/signup.html" class="btn btn-primary btn-full">Get Started</a>
+      </div>
+    </div>
+    <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================================
+         3. HERO
+    ========================================== -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <!-- LEFT -->
+        <div class="hero-content">
+
+          <div class="pathway-label">
+            <div class="pathway-icon">
+              ▲
+            </div>
+            <span>PATHWAY AI</span>
+          </div>
+
+          <h1>
+            Your Path.<br>
+            Your Finances.<br>
+            <span>Your Future.</span>
+          </h1>
+
+          <p class="hero-description">
+            Pathway AI helps Chicago State University students understand their financial wellness, find opportunities, access campus resources, and get personalized support at every step of their college journey.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="/signup.html" class="btn btn-primary btn-large">
+              Create Your Account
+            </a>
+
+            <a href="#how-it-works" class="btn btn-outline btn-large">
+              Learn More
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <strong>Built for CSU</strong>
+              <span>Designed around student success.</span>
+            </div>
+
+            <div>
+              <strong>Privacy First</strong>
+              <span>Your information stays protected.</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="hero-visual">
+
+          <div class="hero-image-wrapper">
+
+            <!-- Approved Chicago State University photography -->
+            <div class="campus-container">
+              <img
+                src="images/csu-campus.jpg"
+                alt="Chicago State University campus with students"
+                class="campus-photo"
+                loading="eager"
+              />
+              <div class="campus-overlay">
+                <span>Chicago State University</span>
+              </div>
+            </div>
+
+
+            <!-- DASHBOARD FLOATING CARD -->
+            <div class="floating-score-card">
+
+              <div class="score-card-header">
+                <div>
+                  <small>PATHWAY SCORE &bull; DEMO</small>
+                  <h3>Your Financial Wellness</h3>
+                </div>
+                <span class="status-dot" title="Active Status"></span>
+              </div>
+
+              <div class="score-content">
+                <div class="score-circle">
+                  <span>725</span>
+                  <small>Good</small>
+                </div>
+
+                <div class="score-message">
+                  <strong>You're on the right path!</strong>
+                  <p>
+                    Keep building healthy financial habits to reach your graduation goals.
+                  </p>
+                  <a href="/dashboard.html">
+                    View Score Details &rarr;
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         4. CORE FEATURES
+    ========================================== -->
+
+    <section class="features-section">
+
+      <div class="container">
+
+        <div class="feature-grid">
+
+          <a href="/dashboard.html" class="feature-card">
+            <div class="feature-icon">&#x25A6;</div>
+            <h3>
+              Understand Your
+              Financial Wellness
+            </h3>
+            <p>
+              See your Pathway Score and receive clear actions for improving your financial wellness.
+            </p>
+          </a>
+
+          <a href="/budget.html" class="feature-card">
+            <div class="feature-icon">$</div>
+            <h3>
+              Manage Your Money
+            </h3>
+            <p>
+              Create a budget, track expenses, monitor bills, and build better financial habits.
+            </p>
+          </a>
+
+          <a href="/opportunities.html" class="feature-card">
+            <div class="feature-icon">&#x2315;</div>
+            <h3>
+              Find Opportunities
+            </h3>
+            <p>
+              Discover scholarships, campus jobs, internships, certifications and programs.
+            </p>
+          </a>
+
+          <a href="/resources.html" class="feature-card">
+            <div class="feature-icon">&#x265F;</div>
+            <h3>
+              Access Resources
+            </h3>
+            <p>
+              Find campus and community resources when you need support.
+            </p>
+          </a>
+
+          <a href="/coach.html" class="feature-card">
+            <div class="feature-icon">&#x25EB;</div>
+            <h3>
+              AI Wellness Coach
+            </h3>
+            <p>
+              Ask questions and receive educational, resource-oriented financial guidance.
+            </p>
+          </a>
+
+          <a href="/privacy.html" class="feature-card">
+            <div class="feature-icon">&#x25C7;</div>
+            <h3>
+              Your Privacy First
+            </h3>
+            <p>
+              Understand what information is collected and control how your data is used.
+            </p>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         5. EVERYTHING IN ONE PLACE (DASHBOARD PREVIEW)
+    ========================================== -->
+
+    <section class="platform-section" id="how-it-works">
+
+      <div class="container platform-grid">
+
+        <!-- LEFT -->
+        <div class="platform-copy">
+          <span class="eyebrow">
+            BUILT FOR CSU STUDENTS
+          </span>
+
+          <h2>
+            Everything you need<br>
+            in one place.
+          </h2>
+
+          <p>
+            Pathway AI brings your finances, opportunities, university resources, deadlines, and personalized guidance together so you can focus on what matters most: your success.
+          </p>
+
+          <a href="/signup.html" class="btn btn-light">
+            Get Started &rarr;
+          </a>
+        </div>
+
+
+        <!-- RIGHT DASHBOARD PREVIEW -->
+        <div class="dashboard-preview">
+
+          <!-- SCORE -->
+          <div class="dashboard-card score-preview">
+            <span class="card-label">
+              YOUR PATHWAY SCORE &bull; SAMPLE DATA
+            </span>
+
+            <div class="mini-score">
+              <div class="mini-score-circle">
+                725
+              </div>
+
+              <div>
+                <strong>Good</strong>
+                <p>
+                  You're building healthy financial habits.
+                </p>
+                <a href="/dashboard.html">
+                  View Score &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ACTIONS -->
+          <div class="dashboard-card">
+            <div class="dashboard-card-title">
+              <span>Today's Actions</span>
+              <a href="/dashboard.html">
+                View All
+              </a>
+            </div>
+
+            <div class="action-item">
+              <div class="action-icon">&check;</div>
+              <div>
+                <strong>FAFSA Priority Deadline</strong>
+                <small>Review your financial aid checklist (Sample)</small>
+              </div>
+              <span class="arrow-indicator">&rarr;</span>
+            </div>
+
+            <div class="action-item">
+              <div class="action-icon">$</div>
+              <div>
+                <strong>Review Monthly Budget</strong>
+                <small>Check your spending progress</small>
+              </div>
+              <span class="arrow-indicator">&rarr;</span>
+            </div>
+          </div>
+
+
+          <!-- FINANCIAL SNAPSHOT -->
+          <div class="dashboard-card financial-preview">
+            <div class="dashboard-card-title">
+              <span>Financial Snapshot</span>
+              <small class="badge-sample">Demo Month</small>
+            </div>
+
+            <div class="financial-stats">
+              <div>
+                <span>Income</span>
+                <strong>$1,850</strong>
+              </div>
+
+              <div>
+                <span>Expenses</span>
+                <strong>$1,270</strong>
+              </div>
+
+              <div>
+                <span>Remaining</span>
+                <strong>$580</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         6. OPPORTUNITIES (OPPORTUNITY HUB)
+    ========================================== -->
+
+    <section class="content-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow green">
+              OPPORTUNITY HUB
+            </span>
+
+            <h2>
+              Opportunities made<br>
+              easier to find.
+            </h2>
+          </div>
+
+          <a href="/opportunities.html" class="text-link">
+            View All Opportunities &rarr;
+          </a>
+        </div>
+
+
+        <div class="opportunity-grid">
+
+          <article class="opportunity-card">
+            <div class="opportunity-header-row">
+              <span class="opportunity-type">SCHOLARSHIP</span>
+              <span class="sample-tag">Sample Data</span>
+            </div>
+
+            <h3>CSU Student Scholarship</h3>
+            <p>
+              Explore financial support opportunities available to Chicago State students across all academic departments.
+            </p>
+
+            <div class="opportunity-footer">
+              <span>Financial Support</span>
+              <a href="/opportunities.html">View Details &rarr;</a>
+            </div>
+          </article>
+
+
+          <article class="opportunity-card">
+            <div class="opportunity-header-row">
+              <span class="opportunity-type">CAMPUS JOB</span>
+              <span class="sample-tag">Sample Data</span>
+            </div>
+
+            <h3>Student Employment</h3>
+            <p>
+              Find student employment opportunities available across campus departments and student services.
+            </p>
+
+            <div class="opportunity-footer">
+              <span>Employment</span>
+              <a href="/opportunities.html">View Details &rarr;</a>
+            </div>
+          </article>
+
+
+          <article class="opportunity-card">
+            <div class="opportunity-header-row">
+              <span class="opportunity-type">INTERNSHIP</span>
+              <span class="sample-tag">Sample Data</span>
+            </div>
+
+            <h3>Career Opportunities</h3>
+            <p>
+              Explore internships and career-building opportunities matched directly to your major and career goals.
+            </p>
+
+            <div class="opportunity-footer">
+              <span>Career</span>
+              <a href="/opportunities.html">View Details &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         7. CAMPUS RESOURCES (RESOURCE NAVIGATOR)
+    ========================================== -->
+
+    <section class="resources-preview-section">
+
+      <div class="container resources-preview-grid">
+
+        <div>
+          <span class="eyebrow green">
+            RESOURCE NAVIGATOR
+          </span>
+
+          <h2>
+            Support when you need it.
+          </h2>
+
+          <p class="section-description">
+            Quickly discover university and community resources that can help with financial, academic, and everyday challenges.
+          </p>
+
+          <a href="/resources.html" class="btn btn-primary">
+            Explore Resources
+          </a>
+        </div>
+
+
+        <div class="resource-list">
+
+          <a href="/resources.html" class="resource-row">
+            <span class="resource-icon">&#x2668;</span>
+            <div>
+              <strong>Food Assistance</strong>
+              <small>Find food pantry &amp; community assistance on campus.</small>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
+
+          <a href="/resources.html" class="resource-row">
+            <span class="resource-icon">&#x2302;</span>
+            <div>
+              <strong>Housing Support</strong>
+              <small>Explore housing options &amp; emergency relief programs.</small>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
+
+          <a href="/resources.html" class="resource-row">
+            <span class="resource-icon">+</span>
+            <div>
+              <strong>Health &amp; Wellness</strong>
+              <small>Connect with physical &amp; mental health campus resources.</small>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
+
+          <a href="/resources.html" class="resource-row">
+            <span class="resource-icon">A</span>
+            <div>
+              <strong>Academic Support</strong>
+              <small>Find tutoring, writing labs, and academic advising.</small>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         8. AI COACH CTA
+    ========================================== -->
+
+    <section class="coach-section">
+
+      <div class="container coach-grid">
+
+        <div>
+          <span class="eyebrow light">
+            AI WELLNESS COACH
+          </span>
+
+          <h2>
+            Questions about your<br>
+            financial wellness?
+          </h2>
+
+          <p>
+            Pathway AI provides educational guidance based on approved university resources and your selected financial wellness information.
+          </p>
+
+          <a href="/coach.html" class="btn btn-light">
+            Talk to the AI Coach &rarr;
+          </a>
+        </div>
+
+
+        <div class="chat-preview">
+
+          <div class="chat-header">
+            <div class="coach-avatar">
+              AI
+            </div>
+            <div>
+              <strong>Pathway AI Coach</strong>
+              <span>Student Wellness Assistant &bull; Educational</span>
+            </div>
+          </div>
+
+          <div class="chat-body">
+
+            <div class="chat-message assistant">
+              Hi! How can I help with your financial wellness today?
+            </div>
+
+            <div class="chat-message user">
+              How can I start building an emergency fund?
+            </div>
+
+            <div class="chat-message assistant">
+              A good starting point is setting a small, achievable savings goal and including it in your monthly budget.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         9. TRUST / PRIVACY
+    ========================================== -->
+
+    <section class="trust-section">
+
+      <div class="container">
+
+        <div class="section-heading centered">
+          <div>
+            <span class="eyebrow green">
+              DESIGNED WITH TRUST
+            </span>
+
+            <h2>
+              Your information. Your choice.
+            </h2>
+
+            <p>
+              Pathway AI is designed to help students understand and control how their information is used.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="trust-grid">
+
+          <div class="trust-card">
+            <span class="trust-icon">&#x25C7;</span>
+            <h3>Privacy &amp; Security</h3>
+            <p>
+              Student information is protected using privacy-conscious platform practices.
+            </p>
+          </div>
+
+          <div class="trust-card">
+            <span class="trust-icon">&check;</span>
+            <h3>Data Transparency</h3>
+            <p>
+              Understand what information the platform collects and why.
+            </p>
+          </div>
+
+          <div class="trust-card">
+            <span class="trust-icon">&#x2699;</span>
+            <h3>Consent Controls</h3>
+            <p>
+              Students can review and manage their consent preferences at any time.
+            </p>
+          </div>
+
+          <div class="trust-card">
+            <span class="trust-icon">$</span>
+            <h3>Not a Credit Score</h3>
+            <p>
+              Your Pathway Score is a financial wellness indicator, not a credit score.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         10. FINAL CTA
+    ========================================== -->
+
+    <section class="final-cta">
+
+      <div class="container final-cta-content">
+
+        <div>
+          <span class="final-cta-tag">PATHWAY AI &times; CHICAGO STATE UNIVERSITY</span>
+          <h2>
+            Build your path forward.
+          </h2>
+          <p>
+            Take control of your financial wellness and discover resources designed to support your success.
+          </p>
+        </div>
+
+        <a href="/signup.html" class="btn btn-light btn-large">
+          Create Your Account
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================
+       11. FOOTER
+  ========================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <div class="brand-mark">
+            CSU
+          </div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </a>
+
+        <p>
+          Pathway AI supports Chicago State University students on their journey toward financial wellness and academic success.
+        </p>
+      </div>
+
+
+      <div class="footer-column">
+        <h4>Pathway AI</h4>
+        <a href="/">Home</a>
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget</a>
+        <a href="/coach.html">AI Coach</a>
+      </div>
+
+
+      <div class="footer-column">
+        <h4>Student Resources</h4>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html">Support</a>
+      </div>
+
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/accessibility.html">Accessibility</a>
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+      <span>
+        &copy; 2026 Chicago State University. All rights reserved.
+      </span>
+
+      <span>
+        Pathway AI &bull; Educational Guidance Only
+      </span>
+    </div>
+
+  </footer>
+
+  <!-- Script for Mobile Menu & Interactivity -->
+  <script src="main.js"></script>
+
+</body>
+</html>
