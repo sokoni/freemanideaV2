@@ -8,6 +8,12 @@
     { "source": "/opportunities", "destination": "/pages/opportunities.html" },
     { "source": "/opportunities.html", "destination": "/pages/opportunities.html" },
     { "source": "/resources", "destination": "/pages/resources.html" },
-    { "source": "/resources.html", "destination": "/pages/resources.html" }
+    { "source": "/resources.html", "destination": "/pages/resources.html" },
+    { "source": "/dashboard", "destination": "/pages/dashboard.html" },
+    { "source": "/dashboard.html", "destination": "/pages/dashboard.html" },
+    { "source": "/signup-login", "destination": "/pages/signup-login.html" },
+    { "source": "/signup-login.html", "destination": "/pages/signup-login.html" },
+    { "source": "/support", "destination": "/pages/support.html" },
+    { "source": "/support.html", "destination": "/pages/support.html" }
   ]
 }

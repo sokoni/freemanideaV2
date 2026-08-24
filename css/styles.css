@@ -8,6 +8,8 @@
 ----------------------------- */
 
 :root {
+  color-scheme: light;
+
   --csu-green: #00563f;
   --csu-green-dark: #003d2d;
   --csu-green-deep: #002e22;
