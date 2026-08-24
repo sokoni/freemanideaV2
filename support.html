@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+
+  <title>Support | Pathway AI — Chicago State University</title>
+
+  <meta
+    name="description"
+    content="Get help with Pathway AI. Contact the support team, browse frequently asked questions, submit a request, or chat with us during business hours."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Existing global styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Support page styles -->
+  <link rel="stylesheet" href="support.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       1. UNIVERSITY ANNOUNCEMENT BAR
+  ====================================================== -->
+
+  <div class="university-bar">
+    <div class="container university-bar-content">
+      <p>
+        <span class="star-icon">★</span> Empowering Chicago State University students to achieve financial wellness and graduate with confidence.
+      </p>
+
+      <div class="university-links">
+        <a href="/support.html">Support</a>
+        <a href="/signup-login.html">Student Login</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       2. NAVIGATION HEADER
+  ====================================================== -->
+
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+
+      <a href="/" class="brand" aria-label="Chicago State University Home">
+        <div class="brand-mark">CSU</div>
+        <div class="brand-text">
+          <strong>CHICAGO STATE</strong>
+          <span>UNIVERSITY</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html" class="active">Support</a>
+        <a href="/about.html">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/signup-login.html" class="login-link">Log In</a>
+        <a href="/signup-login.html" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <button
+        class="mobile-menu-button"
+        id="mobile-menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav-drawer"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <div class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </div>
+        <button class="mobile-close-button" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="/">Home</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html" class="active">Support</a>
+        <a href="/about.html">About</a>
+        <hr class="drawer-divider" />
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget Tracker</a>
+        <a href="/coach.html">AI Wellness Coach</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <a href="/signup-login.html" class="btn btn-outline btn-full">Log In</a>
+        <a href="/signup-login.html" class="btn btn-primary btn-full">Get Started</a>
+      </div>
+    </div>
+    <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         3. SUPPORT HERO / HOW CAN WE HELP
+    ====================================================== -->
+
+    <section class="support-hero">
+      <div class="container support-hero-grid">
+
+        <!-- LEFT CONTENT -->
+        <div class="support-hero-content">
+
+          <h1>How Can We Help?</h1>
+          <p class="support-hero-lead">We're here to support you every step of the way.</p>
+
+          <!-- QUICK ACTION CARDS -->
+          <div class="support-actions-grid">
+
+            <a href="mailto:support@pathwayai.csu.edu" class="support-action-card">
+              <span class="support-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                  <path d="M3 7l9 6 9-6"></path>
+                </svg>
+              </span>
+              <strong>Get in Touch</strong>
+              <p>Email or call our support team.</p>
+            </a>
+
+            <a href="/faq.html" class="support-action-card">
+              <span class="support-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M9.5 9.5a2.5 2.5 0 0 1 4.9.8c0 1.7-2.4 2.2-2.4 3.7"></path>
+                  <path d="M12 17.2v.1"></path>
+                </svg>
+              </span>
+              <strong>FAQ</strong>
+              <p>Find answers to common questions.</p>
+            </a>
+
+            <a href="/support-request.html" class="support-action-card">
+              <span class="support-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16v12H8l-4 4V4z"></path>
+                  <path d="M8 9h8"></path>
+                  <path d="M8 12.5h5"></path>
+                </svg>
+              </span>
+              <strong>Submit a Request</strong>
+              <p>Let us know how we can help.</p>
+            </a>
+
+            <a href="/support.html#chat" class="support-action-card">
+              <span class="support-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 12.5h4"></path>
+                  <path d="M4 5h11a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H9l-4 3v-3a3 3 0 0 1-3-3V8a3 3 0 0 1 2-3z"></path>
+                  <circle cx="19" cy="15.5" r="3.3" fill="none"></circle>
+                </svg>
+              </span>
+              <strong>Live Chat</strong>
+              <p>Chat with our team during business hours.</p>
+            </a>
+
+          </div>
+
+          <!-- CONTACT INFORMATION -->
+          <div class="support-contact-info" id="contact-info">
+            <h2>Contact Information</h2>
+
+            <div class="contact-info-grid">
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="M3 7l9 6 9-6"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:support@pathwayai.csu.edu">support@pathwayai.csu.edu</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 3.7c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+17739950000">(773) 995-XXXX</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item full">
+                <span class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5l3.2 2"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Hours</strong>
+                  <span>Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT VISUAL (bleeds to the true edge of the viewport) -->
+      <div class="support-hero-visual" aria-hidden="true">
+        <img src="images/support-hero.jpg" alt="" class="support-hero-image" />
+        <div class="support-hero-fade"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       4. FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <div class="brand-mark">CSU</div>
+          <div class="brand-text">
+            <strong>CHICAGO STATE</strong>
+            <span>UNIVERSITY</span>
+          </div>
+        </a>
+        <p>
+          Pathway AI supports Chicago State University students on their journey toward financial wellness and academic success.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Pathway AI</h4>
+        <a href="/">Home</a>
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/budget.html">Budget</a>
+        <a href="/coach.html">AI Coach</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Student Resources</h4>
+        <a href="/resources.html">Resources</a>
+        <a href="/opportunities.html">Opportunities</a>
+        <a href="/support.html" class="active">Support</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms of Use</a>
+        <a href="/accessibility.html">Accessibility</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Chicago State University. All rights reserved.</span>
+      <span>Pathway AI &bull; Educational Guidance Only</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+
+</body>
+</html>

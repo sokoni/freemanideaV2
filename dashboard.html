@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+
+  <title>Dashboard | Pathway AI — Chicago State University</title>
+
+  <meta
+    name="description"
+    content="Your Pathway AI dashboard — track your financial wellness score, spending, opportunities, and next steps."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Existing global styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Dashboard page styles -->
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+
+  <div class="dashboard-shell">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar" id="dashboard-sidebar">
+
+      <a href="/" class="sidebar-logo">
+        <span class="sidebar-logo-text">PATHWAY AI</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Dashboard navigation">
+
+        <a href="/dashboard.html" class="sidebar-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"></rect><rect x="13" y="3" width="8" height="8" rx="2"></rect><rect x="3" y="13" width="8" height="8" rx="2"></rect><rect x="13" y="13" width="8" height="8" rx="2"></rect></svg>
+          Dashboard
+        </a>
+
+        <a href="/myscore.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5-4.8-4.6 6.6-.9z"></path></svg>
+          My Score
+        </a>
+
+        <a href="/budget.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h3M13 12h3M8 16h3M13 16h3"></path></svg>
+          Budget Planner
+        </a>
+
+        <a href="/opportunities.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 12h18"></path></svg>
+          Opportunities
+        </a>
+
+        <a href="/resources.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5v-17z"></path><path d="M4 4.5v17"></path><path d="M20 19H6.5a2.5 2.5 0 0 0-2.5 2.5"></path></svg>
+          Resources
+        </a>
+
+        <a href="/coach.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 3.5L17 8l-3.5 1.5L12 13l-1.5-3.5L7 8l3.5-1.5z"></path><path d="M5 15.5l.8 1.9L7.7 18l-1.9.8-.8 1.9-.8-1.9-1.9-.8 1.9-.6z"></path><path d="M18.5 14l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z"></path></svg>
+          AI Coach
+        </a>
+
+        <a href="/messages.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg>
+          Messages
+        </a>
+
+        <a href="/profile.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c1.4-3.6 4.4-5.5 7.5-5.5s6.1 1.9 7.5 5.5"></path></svg>
+          Profile
+        </a>
+
+        <a href="/settings.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 13.5a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V19a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path></svg>
+          Settings
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="/signup-login.html" class="sidebar-link sidebar-signout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><path d="M16 17l5-5-5-5"></path><path d="M21 12H9"></path></svg>
+          Sign Out
+        </a>
+      </div>
+
+    </aside>
+
+    <div class="dashboard-backdrop" id="dashboard-backdrop"></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+      <div class="dashboard-topbar">
+
+        <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+        <div class="topbar-greeting">
+          <h1>Welcome back, Jada! <span class="wave" aria-hidden="true">👋</span></h1>
+          <p>Here's your financial wellness overview.</p>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 0 1-3.4 0"></path></svg>
+          </button>
+          <button class="icon-button" aria-label="Achievements">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"></path></svg>
+          </button>
+          <a href="/profile.html" class="icon-button" aria-label="Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c1.4-3.6 4.4-5.5 7.5-5.5s6.1 1.9 7.5 5.5"></path></svg>
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           BENTO GRID
+      ====================================================== -->
+
+      <div class="bento-grid">
+
+        <div class="bento-left">
+
+          <div class="bento-row-2col">
+
+            <!-- PATHWAY SCORE -->
+            <article class="bento-card score-card">
+              <h3>Pathway Score</h3>
+
+              <div class="score-ring-wrap">
+                <svg class="score-ring" viewBox="0 0 140 140">
+                  <circle class="score-ring-track" cx="70" cy="70" r="60"></circle>
+                  <circle class="score-ring-progress" cx="70" cy="70" r="60"></circle>
+                </svg>
+                <div class="score-ring-center">
+                  <strong>725</strong>
+                  <span class="score-tier">Good</span>
+                </div>
+              </div>
+
+              <p>You're on the right path! Keep building healthy habits to reach your financial goals.</p>
+              <a href="/myscore.html" class="card-link">View Score Details &rarr;</a>
+            </article>
+
+            <!-- FINANCIAL SNAPSHOT -->
+            <article class="bento-card snapshot-card">
+              <div class="card-header-row">
+                <h3>Financial Snapshot</h3>
+                <button type="button" class="pill-select">
+                  This Month
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+                </button>
+              </div>
+
+              <div class="snapshot-stats">
+                <div class="snapshot-stat">
+                  <span class="snapshot-icon income" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v8M9.5 10a2.5 2.5 0 0 1 2.5-1.5c1.5 0 2.5.8 2.5 1.8 0 2.4-5 1.4-5 3.8 0 1 1 1.9 2.5 1.9s2.5-.7 2.5-1.7"></path></svg>
+                  </span>
+                  <div>
+                    <span class="stat-label">Income</span>
+                    <strong>$1,550</strong>
+                  </div>
+                </div>
+
+                <div class="snapshot-stat">
+                  <span class="snapshot-icon expense" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h11a3 3 0 0 1 3 3v1"></path><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2H8"></path><circle cx="16.5" cy="14" r="1.4"></circle></svg>
+                  </span>
+                  <div>
+                    <span class="stat-label">Expenses</span>
+                    <strong>$1,270</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- SPENDING BREAKDOWN -->
+          <article class="bento-card spending-card">
+            <h3>Spending Breakdown</h3>
+
+            <div class="spending-layout">
+              <div class="donut-chart" aria-hidden="true">
+                <div class="donut-hole"></div>
+              </div>
+
+              <ul class="spending-legend">
+                <li>
+                  <span class="legend-dot" style="background:#4285F4"></span>
+                  <span class="legend-name">Housing</span>
+                  <strong>$533</strong>
+                  <span class="legend-pct">42%</span>
+                </li>
+                <li>
+                  <span class="legend-dot" style="background:#F5A623"></span>
+                  <span class="legend-name">Food</span>
+                  <strong>$305</strong>
+                  <span class="legend-pct">24%</span>
+                </li>
+                <li>
+                  <span class="legend-dot" style="background:#14B8A6"></span>
+                  <span class="legend-name">Transportation</span>
+                  <strong>$203</strong>
+                  <span class="legend-pct">16%</span>
+                </li>
+                <li>
+                  <span class="legend-dot" style="background:#8B5CF6"></span>
+                  <span class="legend-name">Fitness &amp; Health</span>
+                  <strong>$127</strong>
+                  <span class="legend-pct">10%</span>
+                </li>
+                <li>
+                  <span class="legend-dot" style="background:#94A3B8"></span>
+                  <span class="legend-name">Personal</span>
+                  <strong>$102</strong>
+                  <span class="legend-pct">8%</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="bento-right">
+
+          <!-- TODAY'S ACTION -->
+          <article class="bento-card action-card">
+            <h3>Today's Action</h3>
+
+            <div class="priority-action">
+              <span class="priority-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18"></path><path d="M5 4h11l-1.5 3.5L16 11H5"></path></svg>
+              </span>
+              <div>
+                <strong>FAFSA Priority Deadline</strong>
+                <p>Submit your 2024&ndash;25 FAFSA by June 30, 2025.</p>
+              </div>
+            </div>
+
+            <a href="/resources.html" class="btn btn-primary btn-full">Take Action</a>
+
+            <div class="upcoming-block">
+              <h4>Upcoming</h4>
+
+              <ul class="upcoming-list">
+                <li>
+                  <span class="upcoming-dot green"></span>
+                  <div>
+                    <strong>Scholarship Application</strong>
+                    <span>May 15, 2025</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="upcoming-dot red"></span>
+                  <div>
+                    <strong>Rent Payment</strong>
+                    <span>May 1, 2025</span>
+                  </div>
+                </li>
+              </ul>
+
+              <a href="/budget.html" class="card-link">View All &rarr;</a>
+            </div>
+          </article>
+
+          <!-- RECENT OPPORTUNITIES -->
+          <article class="bento-card opportunities-card">
+            <h3>Recent Opportunities</h3>
+
+            <ul class="mini-opportunity-list">
+              <li>
+                <span class="mini-opp-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4-8 4-8-4z"></path><path d="M6 11v5c0 1 3 3 6 3s6-2 6-3v-5"></path></svg>
+                </span>
+                <div class="mini-opp-info">
+                  <strong>CSU Green &amp; Gold Scholarship</strong>
+                  <span>Due Jun 1, 2025</span>
+                </div>
+                <span class="mini-tag recommended">Recommended</span>
+              </li>
+
+              <li>
+                <span class="mini-opp-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5v-17z"></path><path d="M4 4.5v17"></path></svg>
+                </span>
+                <div class="mini-opp-info">
+                  <strong>Student Worker &ndash; Library</strong>
+                  <span>Posted Apr 9, 2025</span>
+                </div>
+                <span class="mini-tag campus">On Campus</span>
+              </li>
+
+              <li>
+                <span class="mini-opp-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </span>
+                <div class="mini-opp-info">
+                  <strong>Internship &ndash; City of Chicago</strong>
+                  <span>Due May 30, 2025</span>
+                </div>
+                <span class="mini-tag recommended">Recommended</span>
+              </li>
+            </ul>
+
+            <a href="/opportunities.html" class="card-link">View All &rarr;</a>
+          </article>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
