@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Escape HTML helper
   function escapeHTML(str) {
-    return str.replace(/[&<>'"]/g, 
+    return str.replace(/[&<>'"]/g,
       tag => ({
         '&': '&amp;',
         '<': '&lt;',

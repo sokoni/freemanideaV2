@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -62,10 +62,10 @@
 
       <nav class="nav-links" id="nav-links" aria-label="Main navigation">
         <a href="/" class="active">Home</a>
-        <a href="/resources.html">Resources</a>
-        <a href="/opportunities.html">Opportunities</a>
+        <a href="/pages/resources.html">Resources</a>
+        <a href="/pages/opportunities.html">Opportunities</a>
         <a href="/support.html">Support</a>
-        <a href="/about.html">About</a>
+        <a href="/pages/about.html">About</a>
       </nav>
 
       <div class="nav-actions">
@@ -104,10 +104,10 @@
       </div>
       <nav class="mobile-nav-links">
         <a href="/" class="active">Home</a>
-        <a href="/resources.html">Resources</a>
-        <a href="/opportunities.html">Opportunities</a>
+        <a href="/pages/resources.html">Resources</a>
+        <a href="/pages/opportunities.html">Opportunities</a>
         <a href="/support.html">Support</a>
-        <a href="/about.html">About</a>
+        <a href="/pages/about.html">About</a>
         <hr class="drawer-divider" />
         <a href="/dashboard.html">Dashboard</a>
         <a href="/budget.html">Budget Tracker</a>
@@ -268,17 +268,13 @@
             </p>
           </a>
 
-          <a href="/opportunities.html" class="feature-card">
-            <div class="feature-icon">&#x2315;</div>
-            <h3>
-              Find Opportunities
-            </h3>
-            <p>
-              Discover scholarships, campus jobs, internships, certifications and programs.
-            </p>
+          <a href="/pages/opportunities.html" class="feature-card">
+            <div class="feature-icon feature-icon-purple">🏆</div>
+            <h3>Opportunity Hub</h3>
+            <p>Scholarships, internships, research grants, and emergency assistance.</p>
           </a>
 
-          <a href="/resources.html" class="feature-card">
+          <a href="/pages/resources.html" class="feature-card">
             <div class="feature-icon">&#x265F;</div>
             <h3>
               Access Resources
@@ -288,7 +284,7 @@
             </p>
           </a>
 
-          <a href="/coach.html" class="feature-card">
+          <a href="/pages/coach.html" class="feature-card">
             <div class="feature-icon">&#x25EB;</div>
             <h3>
               AI Wellness Coach
@@ -298,7 +294,7 @@
             </p>
           </a>
 
-          <a href="/privacy.html" class="feature-card">
+          <a href="/pages/privacy.html" class="feature-card">
             <div class="feature-icon">&#x25C7;</div>
             <h3>
               Your Privacy First
@@ -364,7 +360,7 @@
                 <p>
                   You're building healthy financial habits.
                 </p>
-                <a href="/dashboard.html">
+                <a href="/pages/dashboard.html">
                   View Score &rarr;
                 </a>
               </div>
@@ -376,7 +372,7 @@
           <div class="dashboard-card">
             <div class="dashboard-card-title">
               <span>Today's Actions</span>
-              <a href="/dashboard.html">
+              <a href="/pages/dashboard.html">
                 View All
               </a>
             </div>
@@ -454,7 +450,7 @@
             </h2>
           </div>
 
-          <a href="/opportunities.html" class="text-link">
+          <a href="/pages/opportunities.html" class="text-link">
             View All Opportunities &rarr;
           </a>
         </div>
@@ -463,57 +459,44 @@
         <div class="opportunity-grid">
 
           <article class="opportunity-card">
-            <div class="opportunity-header-row">
+            <div class="opportunity-card-body">
               <span class="opportunity-type">SCHOLARSHIP</span>
-              <span class="sample-tag">Sample Data</span>
-            </div>
-
-            <h3>CSU Student Scholarship</h3>
-            <p>
-              Explore financial support opportunities available to Chicago State students across all academic departments.
-            </p>
-
-            <div class="opportunity-footer">
-              <span>Financial Support</span>
-              <a href="/opportunities.html">View Details &rarr;</a>
+              <h3>CSU Student Scholarship</h3>
+              <p>
+                Explore financial support opportunities available to Chicago State students across all academic departments.
+              </p>
+              <a href="/pages/opportunities.html">View Details &rarr;</a>
             </div>
           </article>
 
 
-          <article class="opportunity-card">
-            <div class="opportunity-header-row">
-              <span class="opportunity-type">CAMPUS JOB</span>
-              <span class="sample-tag">Sample Data</span>
+          <!-- Opportunity 2 -->
+          <div class="opportunity-card">
+            <div class="opportunity-card-body">
+              <span class="opportunity-tag tag-green">Emergency Fund</span>
+              <h3>CSU Student Emergency Grant</h3>
+              <p>Financial assistance for unexpected hardship, technology needs, or course materials.</p>
+              <div class="opportunity-meta">
+                <span>Award: Up to $1,000</span>
+                <span>Deadline: Rolling</span>
+              </div>
+              <a href="/pages/opportunities.html">View Details &rarr;</a>
             </div>
+          </div>
 
-            <h3>Student Employment</h3>
-            <p>
-              Find student employment opportunities available across campus departments and student services.
-            </p>
-
-            <div class="opportunity-footer">
-              <span>Employment</span>
-              <a href="/opportunities.html">View Details &rarr;</a>
+          <!-- Opportunity 3 -->
+          <div class="opportunity-card">
+            <div class="opportunity-card-body">
+              <span class="opportunity-tag tag-amber">Internship</span>
+              <h3>Tech Leadership Summer Fellowship</h3>
+              <p>Paid summer internship with mentorship and industry networking opportunities.</p>
+              <div class="opportunity-meta">
+                <span>Stipend: $6,000</span>
+                <span>Deadline: Mar 30</span>
+              </div>
+              <a href="/pages/opportunities.html">View Details &rarr;</a>
             </div>
-          </article>
-
-
-          <article class="opportunity-card">
-            <div class="opportunity-header-row">
-              <span class="opportunity-type">INTERNSHIP</span>
-              <span class="sample-tag">Sample Data</span>
-            </div>
-
-            <h3>Career Opportunities</h3>
-            <p>
-              Explore internships and career-building opportunities matched directly to your major and career goals.
-            </p>
-
-            <div class="opportunity-footer">
-              <span>Career</span>
-              <a href="/opportunities.html">View Details &rarr;</a>
-            </div>
-          </article>
+          </div>
 
         </div>
 
@@ -543,18 +526,40 @@
           <p class="section-description">
             Quickly discover university and community resources that can help with financial, academic, and everyday challenges.
           </p>
-
-          <a href="/resources.html" class="btn btn-primary">
-            Explore Resources
+          <a href="/pages/resources.html" class="btn btn-primary">
+            Explore All Resources
           </a>
         </div>
 
 
-        <div class="resource-list">
+        <div class="resource-preview-list">
+          <a href="/pages/resources.html" class="resource-row">
+            <div class="resource-row-info">
+              <h4>Academic Success Center</h4>
+              <p>Tutoring, study groups, & academic advising</p>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
 
-          <a href="/resources.html" class="resource-row">
+          <a href="/pages/resources.html" class="resource-row">
+            <div class="resource-row-info">
+              <h4>Counseling & Wellness Center</h4>
+              <p>Mental health support & confidential counseling</p>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
+
+          <a href="/pages/resources.html" class="resource-row">
+            <div class="resource-row-info">
+              <h4>Financial Wellness Office</h4>
+              <p>Budgeting advice & financial aid counseling</p>
+            </div>
+            <span class="resource-arrow">&rarr;</span>
+          </a>
+
+          <a href="/pages/resources.html" class="resource-row">
             <span class="resource-icon">&#x2668;</span>
-            <div>
+            <div class="resource-row-info">
               <strong>Food Assistance</strong>
               <small>Find food pantry &amp; community assistance on campus.</small>
             </div>
@@ -793,15 +798,15 @@
 
       <div class="footer-column">
         <h4>Student Resources</h4>
-        <a href="/resources.html">Resources</a>
-        <a href="/opportunities.html">Opportunities</a>
+        <a href="/pages/resources.html">Resources</a>
+        <a href="/pages/opportunities.html">Opportunities</a>
         <a href="/support.html">Support</a>
       </div>
 
 
       <div class="footer-column">
         <h4>Information</h4>
-        <a href="/about.html">About</a>
+        <a href="/pages/about.html">About</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/terms.html">Terms of Use</a>
         <a href="/accessibility.html">Accessibility</a>
@@ -823,7 +828,7 @@
   </footer>
 
   <!-- Script for Mobile Menu & Interactivity -->
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>
