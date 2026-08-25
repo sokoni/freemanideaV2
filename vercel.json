@@ -3,17 +3,17 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/about.html", "destination": "/pages/about.html" },
-    { "source": "/opportunities", "destination": "/pages/opportunities.html" },
-    { "source": "/opportunities.html", "destination": "/pages/opportunities.html" },
-    { "source": "/resources", "destination": "/pages/resources.html" },
-    { "source": "/resources.html", "destination": "/pages/resources.html" },
-    { "source": "/dashboard", "destination": "/pages/dashboard.html" },
-    { "source": "/dashboard.html", "destination": "/pages/dashboard.html" },
-    { "source": "/signup-login", "destination": "/pages/signup-login.html" },
-    { "source": "/signup-login.html", "destination": "/pages/signup-login.html" },
-    { "source": "/support", "destination": "/pages/support.html" },
-    { "source": "/support.html", "destination": "/pages/support.html" }
+    { "source": "/about", "destination": "/pages/about" },
+    { "source": "/about.html", "destination": "/pages/about" },
+    { "source": "/opportunities", "destination": "/pages/opportunities" },
+    { "source": "/opportunities.html", "destination": "/pages/opportunities" },
+    { "source": "/resources", "destination": "/pages/resources" },
+    { "source": "/resources.html", "destination": "/pages/resources" },
+    { "source": "/dashboard", "destination": "/pages/dashboard" },
+    { "source": "/dashboard.html", "destination": "/pages/dashboard" },
+    { "source": "/signup-login", "destination": "/pages/signup-login" },
+    { "source": "/signup-login.html", "destination": "/pages/signup-login" },
+    { "source": "/support", "destination": "/pages/support" },
+    { "source": "/support.html", "destination": "/pages/support" }
   ]
 }
